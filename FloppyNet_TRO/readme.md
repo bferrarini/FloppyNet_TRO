@@ -1,13 +1,7 @@
 # main.py
-<<<<<<< HEAD
 This script accepts several parameters to execute tre main function: training a model, exporting it for ARM64 deployment and computing an image representation.
 main.py ralys on a configuration file, *experiment_presets.py*, where the training and modl parameters are defined.
 The available parameters can be checked via: 
-=======
-This script accepts several parameters to execute the main function: training a model, exporting it for ARM64 deployment, and computing an image representation.
-main.py relies on a configuration file, *experiment_presets.py*, where the training and model parameters are defined.
-The available parameters can be checked with: 
->>>>>>> branch 'master' of https://github.com/bferrarini/FloppyNet_TRO
 
 `main.py -h`
 
@@ -29,11 +23,7 @@ For example, to train FloppyNet with the preset *floppynet_TRO* using a differen
 
 ### Exporting a model ###
 
-<<<<<<< HEAD
 * As a H5 keras model
-=======
-* As a H5 Keras model
->>>>>>> branch 'master' of https://github.com/bferrarini/FloppyNet_TRO
 `python3 main.py -M export --format H5 --preset <PRESET_OF_YOUR_CHOICE>`
 
 * As a tflite model for RPI4
@@ -55,8 +45,4 @@ You need a RPI4 installed with a 64-bit OS (e.g. Ubuntu 20.04) and the lce_cnn e
 Use the flag `--cpu_only` as follows:
 `python3 main.py -M descriptor --cpu_only --target_images PATH_TO_YOUR_IMAGE_OR_IMAGE_FOLDER --output_features_file PATH_TO_OUT_FILE --preset <PRESET_OF_YOUR_CHOICE>`
 
-<<<<<<< HEAD
 More details can be found into the `scripts` folder.
-=======
-More details can be found in the `scripts` folder.
->>>>>>> branch 'master' of https://github.com/bferrarini/FloppyNet_TRO
