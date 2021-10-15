@@ -29,7 +29,7 @@ python3 main.py -M training --preset <PRESET_OF_YOUR_CHOICE>
 
 ## Exporting a model ###
 
-### As a H5 keras model
+*As a H5 keras model*
 ```
 python3 main.py -M export --format H5 --preset <PRESET_OF_YOUR_CHOICE>
 ```
