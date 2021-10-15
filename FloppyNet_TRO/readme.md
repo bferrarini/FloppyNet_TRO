@@ -1,7 +1,7 @@
 # main.py
 This script accepts several parameters to execute the main function: training a model, exporting it for ARM64 deployment, and computing an image representation.
 main.py relies on a configuration file, *experiment_presets.py*, where the training and model parameters are defined.
-The available parameters can be checked via: 
+The available parameters can be checked with: 
 
 `main.py -h`
 
