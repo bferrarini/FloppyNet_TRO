@@ -3,7 +3,9 @@ This script accepts several parameters to execute tre main function: training a 
 main.py ralys on a configuration file, *experiment_presets.py*, where the training and modl parameters are defined.
 The available parameters can be checked via: 
 
-`main.py -h`
+```
+main.py -h
+```
 
 ## EXPERIMENTAL PRESETS
 
@@ -16,7 +18,9 @@ The available parameters can be checked via:
 The default is: *./output/trained_models*
 It can be changed via `-models_save_dir` parameter
 For example, to train FloppyNet with the preset *floppynet_TRO* using a different working folder, the command is as follows:
-`python3 main.py -M training --preset floppynet_TRO --models_save_dir C:\mymodels`
+````
+python3 main.py -M training --preset floppynet_TRO --models_save_dir C:\mymodels
+```
 
 ### Training a model ###
 `python3 main.py -M training --preset <PRESET_OF_YOUR_CHOICE>`
