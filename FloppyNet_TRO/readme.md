@@ -57,7 +57,7 @@ python3 main.py -M descriptor --target_images PATH_TO_YOUR_IMAGE_OR_IMAGE_FOLDER
 ## Computing an image representation from an TFLITE model
 You need a RPI4 installed with a 64-bit OS (e.g. Ubuntu 20.04) and the lce_cnn executable available in TRO_pretrained/RPI4 folder of this project 
 
-## CPU_ONLY MODE
+## CPU_ONLY mode
 Use the flag `--cpu_only` as follows:
 ```
 python3 main.py -M descriptor --cpu_only --target_images PATH_TO_YOUR_IMAGE_OR_IMAGE_FOLDER --output_features_file PATH_TO_OUT_FILE --preset <PRESET_OF_YOUR_CHOICE>
@@ -69,3 +69,6 @@ More details can be found into the `scripts` folder.
 # 2) lce_cnn
 The pretrained model for RPI4 are available in the folder `TRO_pretrained/RPI4`.
 In the same directory are available our BNN executable based on LCE and the source code. If you are interested in compiling our source code or your version, I suggest compiling it inside the Doker provided byLarq progject](https://docs.larq.dev/compute-engine/build/docker/).
+
+# 3) 'output' folder
+This directory is populated on training. If you intentend only to run pretrained model, you don't need this folder.
