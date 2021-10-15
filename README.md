@@ -5,7 +5,7 @@ This repository shares several tool for training and deploying FloppyNet on a Ra
 
 1. *main.py* is the only file you need for:
     *  Training FloppyNet and the other BNNs presented in our paper.
-    *  Exporting a model in [Larq-Compute-Engine](https://docs.larq.dev/compute-engine/) format for ARM64 cpus (i.e. RPI4).  
+    *  Exporting a model in [Larq-Compute-Engine](https://docs.larq.dev/compute-engine/) format for ARM64 cpus (i.e. [RPI4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/)).  
     *  Computing an image descriptor
 2. *TRO_pretrained* contains the model trained for the paper. Both H5 and LCE (.tflite) formats are available.
     * RPI4 includes an engine to run the LCE models: lce_cnn
