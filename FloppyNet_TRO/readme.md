@@ -1,4 +1,4 @@
-# main.py
+# 1) main.py
 This script accepts several parameters to execute tre main function: training a model, exporting it for ARM64 deployment and computing an image representation.
 main.py ralys on a configuration file, *experiment_presets.py*, where the training and modl parameters are defined.
 The available parameters can be checked via: 
@@ -29,17 +29,17 @@ python3 main.py -M training --preset <PRESET_OF_YOUR_CHOICE>
 
 ## Exporting a model ###
 
-*As a H5 keras model*
+__As a H5 keras model__
 ```
 python3 main.py -M export --format H5 --preset <PRESET_OF_YOUR_CHOICE>
 ```
 
-### As a tflite model for RPI4
+__As a tflite model for RPI4__
 ```
 python3 main.py -M export --format arm64 --preset <PRESET_OF_YOUR_CHOICE>
 ```
 
-### both formats at the same time
+__both formats at the same time__
 ```
 python3 main.py -M export --format all --preset <PRESET_OF_YOUR_CHOICE>
 ```
@@ -64,3 +64,8 @@ python3 main.py -M descriptor --cpu_only --target_images PATH_TO_YOUR_IMAGE_OR_I
 ```
 
 More details can be found into the `scripts` folder.
+
+
+# 2) lce_cnn
+The pretrained model for RPI4 are available in the folder `TRO_pretrained/RPI4`.
+In the same directory are available our BNN executable based on LCE and the source code. If you are interested in compiling our source code or your version, I suggest compiling it inside the Doker provided byLarq progject](https://docs.larq.dev/compute-engine/build/docker/).
