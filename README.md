@@ -21,7 +21,7 @@ The main python3 packages required to use the provided code are the following.
 * larq >= 0.10.2
 * larq-compute-engine >= 0.4.3
 * opencv >= 4.4.0
-* prettytable 2.0.0
+* prettytable >= 2.0.0
 
 ## How to cite this work
 If you use this code, please cite us:
