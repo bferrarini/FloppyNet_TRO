@@ -36,7 +36,7 @@ params['model_name'] = FNet_TRO
 params['training_data'] = D.training_datasets[D.PLACES365]['training_path']
 # Set validation data to None to split the training data
 params['validation_data'] = D.training_datasets[D.PLACES365]['validation_path']
-# val split is ignored if a path to validation data is given
+# val split is ignored unless validation_data is None
 params['val_split'] = 0.4
 ####################
 params['classes'] = D.training_datasets[D.PLACES365]['nClass']
