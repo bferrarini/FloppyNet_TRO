@@ -14,6 +14,34 @@ main.py -h
 3) shallownet_TRO
 4) floppynet_TRO
 
+The presets are defined in *experiment_presets.py*. 
+For example:
+
+```
+FNet_TRO = 'floppynet_TRO'
+params['model_name'] = FNet_TRO 
+
+## TRAINING DATA ###
+## CHANGE THE PATHs ACCORDINGLY WITH YOU NEEDS ##
+params['training_data'] = D.training_datasets[D.PLACES365]['training_path']
+# Set validation data to None to split the training data
+params['validation_data'] = D.training_datasets[D.PLACES365]['validation_path']
+# val split is ignored if a path to validation data is given
+params['val_split'] = 0.4
+####################
+
+params['classes'] = D.training_datasets[D.PLACES365]['nClass']
+params['l_rate'] = 5e-4
+params['batch_size'] = 24
+params['epochs'] = 150
+params['model_save_dir'] = model_save_dir
+params['out_layer'] = 'pool5'
+```
+Change them accardingly with you needs. 
+You can either set a path or definiing/chenging the data presets in *dataset_presets.py* (the **D** you can see in the sample code above).
+
+
+
 ## WORKING FOLDER
 The default is: *./output/trained_models*
 It can be changed via `-models_save_dir` parameter
