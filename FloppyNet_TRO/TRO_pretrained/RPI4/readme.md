@@ -19,4 +19,4 @@ The source code is provided in _src_.
 ./lce_cnn -g floppyNet_try4.tflite -b
 ```
 
-The benchmark measures the image descriptor computation while not considering the time required to resize and load an input image from the file system. Thus, it reflects the actual computational efficiency (lines 260 and 264 of src/lce_cnn.cc).
+The benchmark measures the image descriptor computation while not considering the time required to resize and load an input image from the file system. Thus, it reflects the actual computational efficiency (lines 260 to 264 of src/lce_cnn.cc).
