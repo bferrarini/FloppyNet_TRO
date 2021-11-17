@@ -32,7 +32,7 @@ params = dict()
 FNet_TRO = 'floppynet_TRO'
 params['model_name'] = FNet_TRO 
 ## TRAINING DATA ###
-## CHANGE THE PATHs ACCORDINGLY WITH YOU NEEDS ##
+## CHANGE THE PATHs ACCORDINGLY WITH YOUR NEEDS ##
 params['training_data'] = D.training_datasets[D.PLACES365]['training_path']
 # Set validation data to None to split the training data
 params['validation_data'] = D.training_datasets[D.PLACES365]['validation_path']

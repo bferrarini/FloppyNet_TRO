@@ -22,7 +22,7 @@ FNet_TRO = 'floppynet_TRO'
 params['model_name'] = FNet_TRO 
 
 ## TRAINING DATA ###
-## CHANGE THE PATHs ACCORDINGLY WITH YOU NEEDS ##
+## CHANGE THE PATHs ACCORDINGLY WITH YOUR NEEDS ##
 params['training_data'] = D.training_datasets[D.PLACES365]['training_path']
 # Set validation data to None to split the training data
 params['validation_data'] = D.training_datasets[D.PLACES365]['validation_path']
@@ -37,8 +37,8 @@ params['epochs'] = 150
 params['model_save_dir'] = model_save_dir
 params['out_layer'] = 'pool5'
 ```
-Change them accardingly with you needs. 
-You can either set a path or definiing/chenging the data presets in *dataset_presets.py* (the **D** you can see in the sample code above).
+Change them accordingly with your needs. 
+You can either set a path or define/change the data presets in *dataset_presets.py* (the **D** you can see in the sample code above).
 
 
 
