@@ -19,10 +19,4 @@ The source code is provided in _src_.
 ./lce_cnn -g floppyNet_try4.tflite -b
 ```
 
-If your need a more comprehensive benchmark, you can use lce_benchmark_model (LCE custom TFLite Model Benchmark Tool), which was released withing the LCE project at https://github.com/larq/compute-engine
-A typical use is as follows:
-
-```
-./lce_benchmark_model --graph=floppyNet_try4.tflite --num_threads=4 --wamup_runs=50
-```
-
+The benchmark measures the image descriptor computation while not considering the time required to resize and load an input image from the file system. Thus, it reflects the actual computational efficiency (lines 260 and 264 of src/lce_cnn.cc).
