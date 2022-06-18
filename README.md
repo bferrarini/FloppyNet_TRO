@@ -26,4 +26,14 @@ The main python3 packages required to use the provided code are the following.
 ## How to cite this work
 If you use this code, please cite us:
 
-`BIBTEX HERE`
+```
+@ARTICLE{9725251,
+  author={Ferrarini, Bruno and Milford, Michael J. and McDonald-Maier, Klaus D. and Ehsan, Shoaib},
+  journal={IEEE Transactions on Robotics}, 
+  title={Binary Neural Networks for Memory-Efficient and Effective Visual Place Recognition in Changing Environments}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-15},
+  doi={10.1109/TRO.2022.3148908}}
+```
