@@ -32,8 +32,8 @@ If you use this code, please cite us:
   journal={IEEE Transactions on Robotics}, 
   title={Binary Neural Networks for Memory-Efficient and Effective Visual Place Recognition in Changing Environments}, 
   year={2022},
-  volume={},
-  number={},
-  pages={1-15},
+  volume={38},
+  number={4},
+  pages={2617-2631},
   doi={10.1109/TRO.2022.3148908}}
 ```
